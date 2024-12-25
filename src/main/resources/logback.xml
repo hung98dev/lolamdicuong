@@ -1,0 +1,15 @@
+<configuration>
+    <logger name="io.undertow" level="OFF"/>
+    <logger name="org.xnio" level="OFF"/>
+    <logger name="org.jboss.threads" level="OFF"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="OFF">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
